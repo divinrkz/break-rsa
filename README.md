@@ -1,2 +1,31 @@
-# break-rsa
-A cool proof &amp; implementation of a cryptographic attack against RSA insecure keys using Wiener's Theorem.
+#
+Proof of the programs.
+
+### Small $e$ Decryption.
+Let $C = M^e$ *mod* $N$, where $C$ is the encrypted message, M is the original message, $N = pq$, and $e$ is public key for encryption.
+Note that, we denote the private key pair as $(d, N)$. The encryption of the message $M$ is given by $C \equiv M^e$ mod $N$ and the decryption of  text $C$ is given by $C^{d}\equiv (M^{e})^{d}\equiv M^{ed}\equiv M$ mod $N$. <br>
+#### Proof
+
+Since $e$ is small, $m^e$ < $N$ it follows that $C = M^e$ *mod* $N$, so, $M^e < N \iff M=\sqrt[e]{C}$
+Because, if $m^e < N, c = me mod N = me$
+, so m = c
+1
+e =
+√e
+c . So my claim holds.
+Therefore, just doing pow(c, 1
+e
+) in python, which returns eth root of c should successfully give me
+the decrypted message.
+
+Let $N = pq$ be an RSA-modulus, where $p$ and $q$ are primes of equal bit-size. <br>
+Let $e$ be the public exponent and $d$ be the secret exponent satisfying
+$ed = 1$ *mod* $\phi(N)$, where $\phi(N) = (p-1)(q-1)$ is the Euler's phi function. <br>
+Note that we denote by $Z^*_{\phi(N)}$
+the multiplicative group of invertible integers modulo $\phi(N)$. An RSA public key
+is a tuple $(N, e)$ ∈ $Z * Z^*_{\phi(N)}$
+$\phi(N)$.
+
+Since $ed = 1$ *mod* $\phi(N)$, there exists a $k$ such that $ed - k\phi(N) = 1$. Therefore, by diving all terms by $d\phi(N)$, it follows that, $|\frac{e}{\phi(N)} - \frac{k}{d} = \frac{1}{d\phi(N)}|$.
+
+Let G = 
