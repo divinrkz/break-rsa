@@ -2,7 +2,7 @@
 
 ### Small $e$ Decryption.
 I claim that just doing `pow(c, 1/e)` in python, which returns *eth* root of *C* successfully decrypts the encrypted message.
-#### <ins>Proof</u>
+#### <ins>Proof</ins>
 Let $C$ be the encrypted message, $M$ be the original message, $e$ be public key for encryption, and $N = pq$, where $p, q$ are large primes. Note that, we denote the private key pair as $(d, N)$. By the basic principle of RSA, the encryption of the message $M$ is given by $C \equiv M^e$ mod $N$ and the decryption of text $C$ is given by $C^{d}\equiv (M^{e})^{d}\equiv M^{ed}\equiv M$ mod $N$.
 Since $e$ is small, $m^e$ < $N$, and it follows that $C = M^e$ *mod* $N = M^e$. So, $M = C^{\frac{1}{e}} = \sqrt[e]{C}$. <br> Therefore, my claim holds.
 
