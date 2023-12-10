@@ -8,7 +8,6 @@ Since $e$ is small, $m^e$ < $N$, and it follows that $C = M^e$ *mod* $N = M^e$. 
 
 ## 2. Wiener's Attack
 Given an RSA key $(𝑁, 𝑒, 𝑑, 𝑝, 𝑞)$ with $𝑞 < 𝑝 < 2𝑞$ and $𝑑 < \frac{𝑁^\frac{1}{4}}{3}$ then an attacker can efficiently recover the entire private key: $(𝑑, 𝑝, 𝑞).$ 
-### <ins>Proof</ins>
 
 Note that by definition of RSA $ed \equiv $ $_{\phi(N)} 1$, so there exists a $k \in \mathbb{Z}$ such that $ed - k\phi(N) = 1$, by diving all the terms by $d\phi(N)$, it follows that, $\frac{e}{\phi(N)} - \frac{k}{d} = \frac{1}{d\phi(N)}$
 
