@@ -86,20 +86,4 @@ Therefore, $k < d$
 
 Since I've shown that $k < d$, and $d < \frac{N^{\frac{1}{4}}}{3}$ , we have $|\frac{e}{N} - \frac{k}{d}| < \frac{1}{d}N^{\frac{1}{4}}$ \\
 Since $d < \frac{N^{\frac{1}{4}}}{3}, 3d < N^\frac{1}{4}, 2d < 3d < N^\frac{1}{4}$, thus we have $2d < N^\frac{1}{4}$ then, $\frac{1}{2d} > \frac{1}{N\frac{1}{4}}$. <br>From this we can conclude that $|\frac{e}{N} - \frac{k}{d}| < \frac{3k}{d\sqrt{N}} < \frac{1}{d^2d} = \frac{1}{2d^2}$ <br>
-Therefore, now that we’ve satisfied the constraints of Legendre’s theorem above, we can apply it to find $frac{k}{d}$ as a convergent of $\frac{e}{n}$.
-
-<!-- 
-Let $C = M^e$ *mod* $N$, where $C$ is the encrypted message, M is the original message, $N = pq$, and $e$ is public key for encryption.
-Note that, we denote the private key pair as $(d, N)$. The encryption of the message $M$ is given by $C \equiv M^e$ mod $N$ and the decryption of  text $C$ is given by $C^{d}\equiv (M^{e})^{d}\equiv M^{ed}\equiv M$ mod $N$. <br>
-
-Let $N = pq$ be an RSA-modulus, where $p$ and $q$ are primes of equal bit-size. <br>
-Let $e$ be the public exponent and $d$ be the secret exponent satisfying
-$ed = 1$ *mod* $\phi(N)$, where $\phi(N) = (p-1)(q-1)$ is the Euler's phi function. <br>
-Note that we denote by $Z^*_{\phi(N)}$
-the multiplicative group of invertible integers modulo $\phi(N)$. An RSA public key
-is a tuple $(N, e)$ ∈ $Z * Z^*_{\phi(N)}$
-$\phi(N)$.
-
-Since $ed = 1$ *mod* $\phi(N)$, there exists a $k$ such that $ed - k\phi(N) = 1$. Therefore, by diving all terms by $d\phi(N)$, it follows that, $|\frac{e}{\phi(N)} - \frac{k}{d} = \frac{1}{d\phi(N)}|$.
-
-Let G =  --> 
+Therefore, now that we’ve satisfied the constraints of Legendre’s theorem above, we can apply it to find $\frac{k}{d}$ as a convergence of $\frac{e}{n}$.
