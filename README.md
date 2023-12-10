@@ -21,12 +21,14 @@ I claim that $a = \frac{e}{\phi(N)}$ with $\frac{b}{c} = \frac{k}{d}$ satisfies 
 Assume that $p$ and $q$ are large, precisely $p, q \geq 11$.<br>
 Note that, $gcd(k,d) | k,  \iff \exists (a \in \mathbb{Z})$ where $a(\gcd(k, d)) = k$, and, $\gcd(k,d) | d,  \iff \exists (b \in \mathbb{Z})$ where  $b(\gcd(k, d)) = d.$
 <br> By definition of RSA, $ed - k\phi(N) = 1$ ,it follows that, 
-$\begin{equation}
+```math
+\begin{equation}
     \begin{split}
         e(b(gcd(k, d))) - a(gcd(k, d))\phi(N) &= 1 \quad \quad\\
         gcd(k, d)(eb - a\phi(N)) &= 1 \quad \quad 
     \end{split}
 \end{equation}$
+```
 By definition of divides, $x | y \iff \exists(k \in \mathbb{Z}) 
 , y = kx$, where $y = 1, x = \gcd(k,d),  k = (eb-a\phi(N))$[because we know that $e,b,a,\phi(N)$ are integers, so the expression will also give an integer result]. Since $gcd(k,d)|1$, $\gcd(k,d)=1$. <br> Therefore, our claim holds.
 
@@ -34,7 +36,7 @@ Note that, $\lvert\frac{e}{\phi(N)} - \frac{k}{d}\rvert =  \lvert\frac{ed - k\ph
 <br> 
 
 Since, we assumed that $q>11$,
-$
+```math
 \begin{equation}
     \begin{split}
         3q^2 - 6q + 2 &> 0  \\
@@ -48,7 +50,8 @@ $
          \frac{1}{d\phi(N)} &< \frac{2}{dN} 
     \end{split}
 \end{equation}
-$
+```
+
 Note that, $d < \frac{N^{\frac{1}{4}}}{3} = 3d < N^{\frac{1}{4}} = (3d)^4 < N $, which is: $ \frac{1}{(3d)^4} > \frac{1}{N}$ \\
 So, $\frac{2}{dN} = \frac{2}{d}\frac{1}{N} < \frac{2}{d}\frac{1}{81d^4} = \frac{2}{81d^5} < \frac{1}{2d^2}$. 
 
@@ -64,7 +67,7 @@ Therefore, $\left\lvert N − \phi(N)\right\rvert < 3\sqrt{N}$
 <br>
 
 Note that,
-$
+```math
 \begin{equation}
  \begin{split}
     \left\lvert\frac{e}{N} - \frac{k}{d}\right\lvert &= \left\lvert\frac{ed - kN}{Nd} \right\lvert\\
@@ -76,7 +79,7 @@ $
        < \frac{3k}{d\sqrt{N}}
      \end{split}
 \end{equation}
-$
+```
 <br>
 
 From $ed - k\phi(N)=1, k\phi(N) = ed - 1 < ed$ which is $k\phi(N) < ed$. Since, $e < \phi(N)$, so $k\phi(N) < ed < \phi(N)d$ then we have $k\phi(N) < \phi(N)d = k < d$.<br>
