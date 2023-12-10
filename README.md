@@ -1,4 +1,4 @@
-# Break RSA.
+# Break RSA
 
 ## 1. Small $e$ Decryption.
 I claim that just doing `pow(c, 1/e)` in python, which returns *eth* root of *C* successfully decrypts the encrypted message.
