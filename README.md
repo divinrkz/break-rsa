@@ -59,44 +59,33 @@ Therefore, I've shown that $\left\lvert\frac{e}{\phi(N)} - \frac{k}{d}\right\lve
 <br>
 
 Note that by defintion of $\phi(N) = (p-1)(q-1)$, $N=pq$. 
-So, $|pq - (p-1)(q-1)| = |pq-(pq-p-q-1)| = |p+q-1|$. By assumption, $p,q  \geq 11$, so $|p+q-1| > 0$ and so, we can write $p+q-1$. We also know that $p < 2q$. So $p+q-1 < 2q+q-1 = 3q-1 < 3q = 3\sqrt{q^2} < 3\sqrt{pq} = 3\sqrt{N}$.
+So, $|pq - (p-1)(q-1)| = |pq-(pq-p-q-1)| = |p+q-1|$. By assumption, $p,q  \geq 11$, so $|p+q-1| > 0$ and so, we can write $p+q-1$. We also know that $p < 2q$. So $p+q-1 < 2q+q-1 = 3q-1 < 3q = 3\sqrt{q^2} < 3\sqrt{pq} = 3\sqrt{N}$.<br>
 Therefore, $\left\lvert N − \phi(N)\right\rvert < 3\sqrt{N}$
 
-% Put your solution here
-\end{part}
+<br>
 
-% (c) - Lemma 2
-\begin{part}
-\textbf{Claim:} $\left\lvert\frac{e}{N}-\frac{k}{d}\right\lvert<\frac{3k}{d\sqrt{N}}$
-% Put your solution here
-\\
-We have:
+Note that,
+$
 \begin{equation}
  \begin{split}
-    \left\lvert\frac{e}{N} - \frac{k}{d}\right\lvert &= \left\lvert\frac{ed - kN}{Nd} \right\lvert \quad \quad\quad\quad\quad\quad\quad\quad\quad\quad $[Combine terms]$\\ 
-    &= \left\lvert\frac{ed-k\phi(N) - kN + k\phi(N)}{Nd}\right\lvert \quad\quad $[Subtract and add k\phi(N)]$\\
-    &= \left\lvert\frac{1-k(N-\phi(N))}{Nd}\right\lvert \quad\quad\quad\quad\quad\quad\quad\quad $[Use $ed - k\phi(N) = 1$, and factorize]$ \\
+    \left\lvert\frac{e}{N} - \frac{k}{d}\right\lvert &= \left\lvert\frac{ed - kN}{Nd} \right\lvert\\
+    &= \left\lvert\frac{ed-k\phi(N) - kN + k\phi(N)}{Nd}\right\lvert \\
+    &= \left\lvert\frac{1-k(N-\phi(N))}{Nd}\right\lvert  \\
     &< \frac{-k(N-\phi(N))}{Nd} \\
-       &< \left\lvert k \frac{3\sqrt{N}}{Nd}\right\lvert $[From Lemma 2] $ 
-       = \left\lvert\frac{3k\sqrt{N}}{\sqrt{N}\sqrt{N}d}\right\lvert  $[Express N as ${\sqrt{N}}^2$] $ 
+       &< \left\lvert k \frac{3\sqrt{N}}{Nd}\right\lvert 
+       = \left\lvert\frac{3k\sqrt{N}}{\sqrt{N}\sqrt{N}d}\right\lvert  
        < \frac{3k}{d\sqrt{N}}
      \end{split}
 \end{equation}
-\end{part}
-Therefore, our claim holds.
-% (d) - Lemma 3
-\begin{part}
-% Put your solution here
-\textbf{Claim:} $k < d$ \\
-From $ed - k\phi(N)=1, k\phi(N) = ed - 1 < ed$ which is $k\phi(N) < ed$. Since, $e < \phi(N)$, so $k\phi(N) < ed < \phi(N)d$ then we have $k\phi(N) < \phi(N)d = k < d$ \\ 
-Therefore our claim holds. \\
-\end{part}
+$
+<br>
 
-% (e) - Wiener's Theorem
-\begin{part}
-\textbf{Claim:} $\left\lvert\frac{e}{N} - \frac{k}{d}\right\rvert < \frac{1}{2d^2}$ \\
-Since $k < d$ from Lemma 3, and $d < \frac{N^{\frac{1}{4}}}{3}$ , we have $|\frac{e}{N} - \frac{k}{d}| < \frac{1}{d}N^{\frac{1}{4}}$ \\
-Since $d < \frac{N^{\frac{1}{4}}}{3}, 3d < N^\frac{1}{4}, 2d < 3d < N^\frac{1}{4}$, thus we have $2d < N^\frac{1}{4}$ then, $\frac{1}{2d} > \frac{1}{N\frac{1}{4}}$ From this we can conclude that $|\frac{e}{N} - \frac{k}{d}| < \frac{3k}{d\sqrt{N}} < \frac{1}{d^2d} = \frac{1}{2d^2}$ \\
+From $ed - k\phi(N)=1, k\phi(N) = ed - 1 < ed$ which is $k\phi(N) < ed$. Since, $e < \phi(N)$, so $k\phi(N) < ed < \phi(N)d$ then we have $k\phi(N) < \phi(N)d = k < d$.<br>
+Therefore, $k < d$
+
+
+Since I've shown that $k < d$, and $d < \frac{N^{\frac{1}{4}}}{3}$ , we have $|\frac{e}{N} - \frac{k}{d}| < \frac{1}{d}N^{\frac{1}{4}}$ \\
+Since $d < \frac{N^{\frac{1}{4}}}{3}, 3d < N^\frac{1}{4}, 2d < 3d < N^\frac{1}{4}$, thus we have $2d < N^\frac{1}{4}$ then, $\frac{1}{2d} > \frac{1}{N\frac{1}{4}}$. <br>From this we can conclude that $|\frac{e}{N} - \frac{k}{d}| < \frac{3k}{d\sqrt{N}} < \frac{1}{d^2d} = \frac{1}{2d^2}$ \\
 Therefore we are done.
 \end{part}
 <!-- 
