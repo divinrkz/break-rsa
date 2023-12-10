@@ -12,6 +12,9 @@ Given an RSA key $(𝑁, 𝑒, 𝑑, 𝑝, 𝑞)$ with $𝑞 < 𝑝 < 2𝑞$ and
 
 Note that by definition of RSA $ed \equiv $ $_{\phi(N)} 1$, so there exists a $k \in \mathbb{Z}$ such that $ed - k\phi(N) = 1$, by diving all the terms by $d\phi(N)$, it follows that, $\frac{e}{\phi(N)} - \frac{k}{d} = \frac{1}{d\phi(N)}$
 
+By Legendre's Theorem, 
+If $|a - \frac{b}{c}| < \frac{1}{2c^2}$ and gcd $(b,c)=1$ then $\frac{b}{c}$ appears as some convergent of a continued fraction of $a$ *(Read about [Continued Fractions](https://en.wikipedia.org/wiki/Continued_fraction)).*
+
 <!-- 
 Let $C = M^e$ *mod* $N$, where $C$ is the encrypted message, M is the original message, $N = pq$, and $e$ is public key for encryption.
 Note that, we denote the private key pair as $(d, N)$. The encryption of the message $M$ is given by $C \equiv M^e$ mod $N$ and the decryption of  text $C$ is given by $C^{d}\equiv (M^{e})^{d}\equiv M^{ed}\equiv M$ mod $N$. <br>
