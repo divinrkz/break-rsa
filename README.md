@@ -57,7 +57,6 @@ Note that, $d < \frac{N^{\frac{1}{4}}}{3} = 3d < N^{\frac{1}{4}} = (3d)^4 < N $,
 So, $\frac{2}{dN} = \frac{2}{d}\frac{1}{N} < \frac{2}{d}\frac{1}{81d^4} = \frac{2}{81d^5} < \frac{1}{2d^2}$. 
 
 Therefore, I've shown that $\left\lvert\frac{e}{\phi(N)} - \frac{k}{d}\right\lvert = \frac{1}{d\phi(N)} < \frac{2}{dN} < \frac{1}{2d^2}$ 
-<br>
 
 Note that by defintion of $\phi(N) = (p-1)(q-1)$, $N=pq$. 
 So, $|pq - (p-1)(q-1)| = |pq-(pq-p-q-1)| = |p+q-1|$. By assumption, $p,q  \geq 11$, so $|p+q-1| > 0$ and so, we can write $p+q-1$. We also know that $p < 2q$. So $p+q-1 < 2q+q-1 = 3q-1 < 3q = 3\sqrt{q^2} < 3\sqrt{pq} = 3\sqrt{N}$.<br>
