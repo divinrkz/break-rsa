@@ -17,7 +17,8 @@ if $\lvert a - \frac{b}{c}\rvert < \frac{1}{2c^2}$ and $gcd(b,c)=1$ then $\frac{
 
 I claim that $a = \frac{e}{\phi(N)}$ with $\frac{b}{c} = \frac{k}{d}$ satisfies preconditions of Legendre's theorem that is $gcd(k,d)=1$ and $\lvert \frac{e}{\phi(N)} - \frac{k}{d}\rvert = \frac{1}{d\phi(N)} < \frac{2}{dN} < \frac{1}{2d^2}$.
 
-<ins>Proof</ins><br>
+### <ins>Proof</ins>
+
 Assume that $p$ and $q$ are large, precisely $p, q \geq 11$.<br>
 Note that, $gcd(k,d) | k,  \iff \exists (a \in \mathbb{Z})$ where $a(\gcd(k, d)) = k$, and, $\gcd(k,d) | d,  \iff \exists (b \in \mathbb{Z})$ where  $b(\gcd(k, d)) = d.$
 <br> By definition of RSA, $ed - k\phi(N) = 1$ ,it follows that, 
