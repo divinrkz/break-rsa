@@ -52,7 +52,7 @@ Since, we assumed that $q>11$,
     \end{split}
 \end{equation}
 ```
-Note that, $d < \frac{N^{\frac{1}{4}}}{3} = 3d < N^{\frac{1}{4}} = (3d)^4 < N $, which is: $ \frac{1}{(3d)^4} > \frac{1}{N}$ \\
+Note that, $d < \frac{N^{\frac{1}{4}}}{3} = 3d < N^{\frac{1}{4}} = (3d)^4 < N $, which is: $`\frac{1}{(3d)^4} > \frac{1}{N}`$ \\
 So, $\frac{2}{dN} = \frac{2}{d}\frac{1}{N} < \frac{2}{d}\frac{1}{81d^4} = \frac{2}{81d^5} < \frac{1}{2d^2}$. 
 
 Therefore, I've shown that $\left\lvert\frac{e}{\phi(N)} - \frac{k}{d}\right\lvert = \frac{1}{d\phi(N)} < \frac{2}{dN} < \frac{1}{2d^2}$ 
